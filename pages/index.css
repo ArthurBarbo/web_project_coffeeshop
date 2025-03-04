@@ -4,7 +4,7 @@ h3 {
   font-family: "Noto Serif", "Times New roman", serif;
 }
 
-.page__logo {
+.nav__logo {
   position: relative;
   top: 30px;
   left: 30px;
@@ -13,47 +13,40 @@ h3 {
   margin-bottom: 183px;
 }
 .page {
+  position: relative;
   min-width: 1100px;
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding: 0;
   font-family: "inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
-}
-
-.page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
   background-image: url(../images/background_header.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  width: 100%;
+  height: 100vh;
 }
+
 .page__container {
   display: flex;
   justify-content: space-between;
   margin-right: 80px;
 }
-.header__content {
+.header {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 0 auto;
+  margin: 0px;
+  padding: 0px;
   max-height: 800px;
   min-height: 720px;
   height: 100vh;
 }
-.header__text {
-  display: flex;
-  flex-direction: column;
-}
 
-.header__tittle {
+.header__title {
   max-width: 709px;
   margin: 0 0 0 80px;
 }
@@ -93,6 +86,11 @@ h3 {
   max-height: 568px;
   margin-right: 5px;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
 .nav__links {
   list-style-type: none;
   display: flex;
@@ -108,36 +106,30 @@ h3 {
   color: black;
   text-decoration: none;
 }
-.footer {
-  display: flex;
-  justify-content: space-between;
+.header__footer {
   margin-top: auto;
   margin-bottom: 40px;
-}
-
-.footer__list {
-  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
   font-family: "inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
-  margin: 0;
 }
-
-.footer__after__paragraph {
-  align-self: flex-end;
+.header__paragraph {
   font-family: "inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
+  padding: 0 80px 0 80px;
   margin: 0;
 }
 
-.main {
+.content {
   background-image: url(../images/background_recipes.svg);
   background-color: #0a2850;
   background-repeat: no-repeat;
@@ -177,20 +169,20 @@ h3 {
   padding-bottom: 215px;
 }
 
-.video__container {
+.recipes__video-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 24px;
 }
 
-.Video__item {
+.recipes__iframe {
   width: 480px;
   height: 273px;
   border-style: none;
 }
 
-.video-caption {
+.recipes__video-caption {
   font-family: "inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
