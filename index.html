@@ -34,9 +34,7 @@
               <a href="#recipes" class="nav__link">Receitas</a>
             </li>
             <li>
-              <a href="#reservation" class="nav__link"
-                >Reservar uma mesa</a
-              >
+              <a href="#reservation" class="nav__link">Reservar uma mesa</a>
             </li>
             <li>
               <a href="#footer" class="nav__link">Contatos</a>
@@ -103,7 +101,61 @@
             </div>
           </div>
         </section>
-        <section id="reservation" class="reservation"></section>
+        <section id="reservation" class="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+          <form class="reservation__form">
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label"
+                >Nome*
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nome"
+                  class="form__item"
+                  required
+                />
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label for="people" class="form__label"
+                >Número de convidados *</label
+              >
+              <input
+                type="number"
+                id="people"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                class="form__item"
+              />
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label for="date" class="form__label">Data e hora*</label>
+              <input
+                type="datetime-local"
+                id="date"
+                required
+                class="form__item"
+              />
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label for="e-mail" class="form__label">Seu e-mail*</label>
+              <input
+                type="email"
+                id="e-mail"
+                placeholder="email@email.com"
+                class="form__item"
+              />
+            </fieldset>
+            <button type="submit" class="form__button">
+              Reservar uma mesa
+            </button>
+            <fieldset class="form__fieldset">
+              <input type="checkbox" class="form__checkbox" />
+              Eu concordo com os termos de uso
+            </fieldset>
+          </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
